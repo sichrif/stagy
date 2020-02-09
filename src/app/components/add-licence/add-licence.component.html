@@ -1,0 +1,150 @@
+<!-- Title group  -->
+<div class="title-group">
+  <h1 class="mat-h1">Add Licence</h1>
+  <mat-divider fxFlex="1 0"></mat-divider>
+</div>
+
+
+<!-- Form -->
+<div class="inner-wrapper">
+  <form [formGroup]="licenceForm" (ngSubmit)="submitLicenceForm()" #resetLicenceForm="ngForm" novalidate>
+    <!-- Left block -->
+    <mat-card>
+      <div class="controlers-wrapper">
+        <!-- enseigne -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="enseigne " formControlName="enseigne">
+          <mat-error *ngIf="handleError('enseigne', 'required')">
+            You must provide <strong>enseigne</strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- siret -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="siret" formControlName="siret">
+          <mat-error *ngIf="handleError('siret', 'required')">
+            You must provide <strong>siret  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- code_naf -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="code_naf" formControlName="code_naf">
+          <mat-error *ngIf="handleError('code_naf', 'required')">
+            You must provide <strong>code_naf  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- numero_tva -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="numero_tva" formControlName="numero_tva">
+          <mat-error *ngIf="handleError('numero_tva', 'required')">
+            You must provide <strong>numero_tva  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- telephone -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="telephone" formControlName="telephone">
+          <mat-error *ngIf="handleError('telephone', 'required')">
+            You must provide <strong>telephone  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- adresse -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="adresse" formControlName="adresse">
+          <mat-error *ngIf="handleError('adresse', 'required')">
+            You must provide <strong>adresse  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- code_postal -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="code_postal" formControlName="code_postal">
+          <mat-error *ngIf="handleError('code_postal', 'required')">
+            You must provide <strong>code_postal  </strong>
+          </mat-error>
+        </mat-form-field>
+
+
+     
+        <!-- ville -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="ville" formControlName="ville">
+          <mat-error *ngIf="handleError('ville', 'required')">
+            You must provide <strong>ville  </strong>
+          </mat-error>
+        </mat-form-field>
+
+      </div>
+    </mat-card>
+
+
+    
+        <mat-card>
+          <div class="controlers-wrapper">
+        <!-- pays -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="pays" formControlName="pays">
+          <mat-error *ngIf="handleError('pays', 'required')">
+            You must provide <strong>pays  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- nombre_postes -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="siret" formControlName="nombre_postes">
+          <mat-error *ngIf="handleError('siret', 'required')">
+            You must provide <strong>nombre_postes  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- duree_utilisation -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="duree_utilisation" formControlName="duree_utilisation">
+          <mat-error *ngIf="handleError('duree_utilisation', 'required')">
+            You must provide <strong>duree_utilisation  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- client_email -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="client_email" formControlName="client_email">
+          <mat-error *ngIf="handleError('client_email', 'required')">
+            You must provide <strong>client_email  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- client_pwd -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="client_pwd" formControlName="client_pwd">
+          <mat-error *ngIf="handleError('siret', 'required')">
+            You must provide <strong>client_pwd  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- etat -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="etat" formControlName="etat">
+          <mat-error *ngIf="handleError('etat', 'required')">
+            You must provide <strong>etat  </strong>
+          </mat-error>
+        </mat-form-field>
+        <!-- site -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="site" formControlName="site">
+          <mat-error *ngIf="handleError('site', 'required')">
+            You must provide <strong>site  </strong>
+          </mat-error>
+        </mat-form-field>
+        
+
+        <!-- exercice -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="exercice" formControlName="exercice">
+          <mat-error *ngIf="handleError('exercice', 'required')">
+            You must provide <strong>exercice  </strong>
+          </mat-error>
+        </mat-form-field>
+
+  
+    <!-- Submit & Reset -->
+    <mat-card>
+      <div class="full-wrapper button-wrapper">
+        <div class="button-wrapper">
+          <button mat-flat-button color="warn">Update</button>
+        </div>
+      </div>
+    </mat-card> </div></mat-card>
+  </form>
+</div>
